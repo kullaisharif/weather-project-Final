@@ -1,0 +1,221 @@
+body {
+  background-image: url("background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0%;
+  font-family: "comfortea", sans-serif;
+  color: rgb(1, 0, 0);
+}
+
+body {
+  background-image: url(backgroundpng.png);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.navbar {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+}
+.navbarparentdiv {
+  width: 50%;
+}
+.inputfield {
+  width: 100%;
+  border-radius: 25px;
+  padding: 10px;
+  border: none;
+}
+.searchicon {
+  position: absolute;
+  right: 340px;
+  top: 12px;
+  height: 40px;
+  border-radius: 50px;
+  border-bottom: black;
+}
+.searchicon:hover {
+  cursor: pointer;
+}
+.maincontentparentdiv {
+  height: 90vh;
+}
+
+.leftdiv {
+  width: 30%;
+}
+.rightdiv {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.leftdiv {
+  width: 30%;
+  border: 1px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.leftchild {
+  background-color: rgba(294, 294, 294, 0.2); /* silver-like with 40% opacity */
+  backdrop-filter: blur(6px);
+  width: 90%;
+  height: 40vh;
+  margin: 10px;
+  visibility: transparent;
+  border-radius: 20px;
+  padding: 30px;
+  justify-content: center;
+  flex-direction: "flex-column";
+  line-height: 10px;
+}
+.currenttempdiv h6 {
+  font-size: larger;
+  line-height: 30px;
+  margin-bottom: 5px;
+}
+#cityName {
+  font-size: xx-large;
+}
+#cityTemp {
+  font-size: x-large;
+}
+
+.rightrow {
+  height: 20vh;
+  width: 100%;
+}
+.extramatris {
+  background-color: rgba(294, 294, 294, 0.2);
+  padding: 5% 4%; 
+  width: fit-content;
+  border-radius: 30px;
+}
+.AQI {
+  background-color: rgba(255, 255, 255, 0.2); /* fixed */
+  backdrop-filter: blur(15px);
+  width: 45%;
+  height: 150px;
+  margin: 3%;
+  margin-left: 0%;
+  border-radius: 15px;
+}
+
+.AQI2 {
+  background-color: rgba(255, 255, 255, 0.2); /* fixed */
+  backdrop-filter: blur(15px);
+  width: 40%;
+  height: 150px;
+  margin: 3%;
+  border-radius: 15px;
+  margin-left: 0%;
+}
+.todaytemp{
+  background-color: rgba(294, 294, 294, 0.2);
+   width: 15%;
+  height: 120px;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 15px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+
+}
+.nextfivedaysdiv {
+  height: auto;
+  max-height: 260px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.nextfivedaysdiv > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Forecast Row Fix */
+.forecastrow {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 8px 12px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+}
+.nextfivedaysdiv::-webkit-scrollbar {
+  width: 6px;
+}
+.nextfivedaysdiv::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
+
+@media only screen and (max-width:1000px)
+{
+  .leftdiv{
+    width: 100%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    margin-top: 15px;
+  }
+  .rightdiv {
+  width: 100%;
+  margin: 10px;
+  }
+  .maincontentparentdiv{
+    height: 90vh;
+    flex-direction: column;
+  }
+  .forecastrow{
+    justify-content: center;
+    
+    gap: 8px;
+    width: 93%;
+    
+  }
+  .nextfivedaysdiv{
+   
+    margin-top: 15px;
+    justify-content: center;
+    width: 87%;
+    height: 45%;
+  }
+  .navbarparentdiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.searchicon{
+  
+  padding-left: 70px;
+  width: 100px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+  
+}
+
+}
